@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Tahoma',Arial;
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+}
+
+
+.repos{
+width: 700px;
+margin: 20px auto;
+max-width: 100%;
+background-color: #f8f8f8;
+padding: 20px;
+
+}
+.repos .head{
+position: relative;
+
+}
+
+.repos .head input{
+width: 100%;
+padding: 10px 15px;
+border: 1px solid #ccc;
+outline: none;
+border-radius: 10px;
+}
+
+.repos .head span{
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #009688;
+    color: white;
+    border-radius: 6px;
+    width: 70px;
+    height: 27px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    right: 2%;
+
+}
+.repos .show-data{
+    margin-top: 20px;
+    background-color: #ccc;
+    padding: 15px;
+
+}
+.repos .show-data > span{
+display: block;
+text-align: center;
+margin: 15px;
+
+}
+
+.repos .show-data .child{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+.repos .show-data .child:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.repos .show-data .child .name{
+    flex: 1;
+}
+
+.repos .show-data .child .one{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.repos .show-data .child .stars{
+margin-right: 5px;
+background-color: #009688;
+}
+.repos .show-data .child a{
+text-decoration: none;
+background-color: #df5757;
+}
+
